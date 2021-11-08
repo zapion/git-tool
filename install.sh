@@ -2,7 +2,7 @@
 
 if [ -d .git ]
 then
-    echo "yes"
+    curl -o https://raw.githubusercontent.com/zapion/git-tool/main/prepare-commit-msg .git/hooks/
 else
     echo "This is not a git repo"
     exit 1
